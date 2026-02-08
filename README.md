@@ -9,7 +9,7 @@ Every AI vendor tells you to "review outputs with a qualified professional." Non
 ## What Attest Does
 
 1. Reads the AI output from your current session
-2. Classifies the risk level and identifies assumptions
+2. Suggests a risk classification for you to confirm or adjust, and identifies assumptions
 3. Surfaces contextual review questions specific to that output
 4. Captures your decisions on each question (Confirmed, Flagged, Escalated, or Not applicable)
 5. Produces an audit-ready decision log you can store, share, and reference
