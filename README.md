@@ -1,6 +1,6 @@
 # Attest by Ashby
 
-**Structured human review of AI outputs.**
+**Structured human review of AI outputs.** Attest works in any language. Claude conducts reviews in your language automatically. This README is in English; visit [ashby.systems/attest](https://ashby.systems/attest) for other languages.
 
 Attest is a free, open-source plugin for Claude (Cowork and Claude Code) that ensures AI-generated outputs are reviewed by qualified humans before use. It surfaces contextual questions, captures reviewer decisions, and produces auditable decision logs.
 
