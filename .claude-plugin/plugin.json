@@ -1,0 +1,33 @@
+{
+  "name": "attest",
+  "version": "1.1.0",
+  "description": "Structured human review of AI outputs. Attest surfaces contextual questions, captures reviewer decisions, and produces auditable decision logs. It does not judge, score, or recommend — every decision belongs to the human reviewer.",
+  "author": {
+    "name": "Ashby",
+    "email": "contact@ashby.systems",
+    "url": "https://ashby.systems"
+  },
+  "homepage": "https://ashby.systems/attest",
+  "repository": "https://github.com/ashbysystems/attest",
+  "license": "Apache-2.0",
+  "keywords": [
+    "human-oversight",
+    "ai-governance",
+    "compliance",
+    "audit",
+    "review",
+    "decision-log",
+    "article-14",
+    "eu-ai-act"
+  ],
+  "commands": [
+    "./commands/review.md",
+    "./commands/log.md",
+    "./commands/escalate.md",
+    "./commands/resolve.md",
+    "./commands/status.md",
+    "./commands/config.md",
+    "./commands/help.md"
+  ],
+  "skills": "./skills/"
+}
