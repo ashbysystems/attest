@@ -1,0 +1,23 @@
+{
+  "name": "ashby",
+  "description": "Plugins by Ashby for structured human oversight of AI outputs.",
+  "owner": {
+    "name": "Ashby",
+    "email": "contact@ashby.systems"
+  },
+  "plugins": [
+    {
+      "name": "attest",
+      "description": "Structured human review of AI outputs. Surfaces contextual questions, captures reviewer decisions, and produces auditable decision logs.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Ashby",
+        "email": "contact@ashby.systems"
+      },
+      "source": ".",
+      "category": "productivity",
+      "homepage": "https://ashby.systems/attest",
+      "tags": ["human-oversight", "ai-governance", "compliance", "audit"]
+    }
+  ]
+}
