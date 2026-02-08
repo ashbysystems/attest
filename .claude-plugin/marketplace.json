@@ -1,6 +1,6 @@
 {
-  "name": "ashby",
-  "description": "Plugins by Ashby for structured human oversight of AI outputs.",
+  "name": "ashby-attest",
+  "description": "Structured human review of AI outputs by Ashby.",
   "owner": {
     "name": "Ashby",
     "email": "contact@ashby.systems"
