@@ -97,6 +97,10 @@ Attest by Ashby surfaces questions for human consideration. It does not provide 
 
 Apache 2.0. See [LICENSE](LICENSE).
 
+## How Attest Was Built
+
+Attest was designed by the Ashby team and built using Claude Code. The review methodology, risk classifications, and question frameworks are based on human experience and service design practice. Claude was used as a development tool, not as a domain expert. All design decisions were made by humans.
+
 ## About Ashby
 
 Ashby builds structured human oversight for AI operations. Attest is our open-source review workflow plugin. Requisite is our Article 14 (EU AI Act) compliance assessment tool.
