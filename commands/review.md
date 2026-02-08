@@ -134,7 +134,11 @@ For High risk outputs, end with:
 
 ### Step 9: Response capture
 
-For each question, ask the reviewer for their assessment:
+Each question has a response type (defined in the question-frameworks skill). Use the correct response mechanism for each type.
+
+**For verification questions** (confirm, verify, check):
+
+Ask the reviewer for their assessment using these options:
 
 - **Confirmed** — You agree or have verified this
 - **Flagged** — You have concerns or cannot verify this
@@ -143,9 +147,24 @@ For each question, ask the reviewer for their assessment:
 
 After each response, ask if they want to add notes. Notes are optional but encouraged for Flagged and Escalated items.
 
-If a reviewer selects **Escalated**, offer to create an escalation record immediately via `/attest:escalate`, or note it for later.
+**For information questions** (who, what, describe, explain):
 
-Present all questions first so the reviewer can see the full scope. Then collect responses one question at a time, asking for the response and optional notes before moving to the next question.
+Ask the reviewer to provide their answer as free text. Do NOT present Confirmed/Flagged/Escalated/Not applicable as options — these do not make sense for questions asking for a name, description, or explanation.
+
+Instead, prompt for a text response:
+
+> **Q[n]: [Question text]**
+> Please type your answer:
+
+Record the reviewer's text response as the answer. After they respond, ask if they want to add any additional notes.
+
+If the reviewer indicates the question is not relevant, record "Not applicable" with their explanation.
+
+**For all questions:**
+
+If a reviewer selects or indicates **Escalated**, offer to create an escalation record immediately via `/attest:escalate`, or note it for later.
+
+Present all questions first so the reviewer can see the full scope. Then collect responses one question at a time, using the appropriate response mechanism for each question's type.
 
 ### Step 10: Rubber-stamp detection
 

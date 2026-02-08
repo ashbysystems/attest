@@ -1,6 +1,6 @@
 {
   "name": "attest",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Structured human review of AI outputs. Attest surfaces contextual questions, captures reviewer decisions, and produces auditable decision logs. It does not judge, score, or recommend — every decision belongs to the human reviewer.",
   "author": {
     "name": "Ashby",

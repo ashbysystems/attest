@@ -2,6 +2,17 @@
 
 All notable changes to Attest are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.0] - 2026-02-08
+
+### Fixed
+- Information questions (who, what, describe) now prompt for free text instead of showing Confirmed/Flagged/Escalated/N/A options that don't fit the question type
+- All 5 baseline organisational context questions classified as information questions
+
+### Added
+- Question Response Types section in question-frameworks skill: verification (status options) vs information (free text)
+- Step 9 of review command now uses the correct response mechanism based on question type
+- Classification guidance for category-specific questions
+
 ## [1.1.0] - 2026-02-08
 
 ### Fixed

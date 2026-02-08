@@ -154,6 +154,52 @@ Present questions in this order:
 
 Within each category, order questions from most to least consequential.
 
+## Question Response Types
+
+Every question has a response type that determines how the reviewer answers it. Classify each question when generating it.
+
+### Verification questions
+
+The reviewer confirms or flags a specific aspect of the output. These are questions where Confirmed/Flagged/Escalated/Not applicable makes sense as a response.
+
+**Response options:** Confirmed, Flagged, Escalated, Not applicable
+
+**Indicators:** The question asks the reviewer to confirm, verify, check, or validate something. Typically starts with or contains: "Confirm...", "Verify...", "Check whether...", "Is this correct...", "Does this match..."
+
+**Examples:**
+- "This output references GDPR. Confirm this is the correct framework for your jurisdiction." → **Verification**
+- "The output cites a 72-hour breach notification window. Confirm this matches current requirements." → **Verification**
+
+### Information questions
+
+The reviewer provides context, names, descriptions, or explanations. These are questions where the answer is a person, a process, a description, or a choice between options — not a status.
+
+**Response format:** Free text input. Prompt the reviewer to type their answer.
+
+**Indicators:** The question asks who, what, which, how, or asks the reviewer to describe or explain something. The answer is a name, role, description, or contextual detail — not a yes/no verification.
+
+**Examples:**
+- "Who in your organisation would normally be responsible for this type of work?" → **Information** (answer is a name/role)
+- "Does this output reflect how your organisation actually operates, or how organisations operate generically?" → **Information** (answer is a description)
+- "If this output were wrong, what would the consequences be and who would be affected?" → **Information** (answer is a description)
+- "Is this output going to be used as-is, or as input to further work?" → **Information** (answer is a choice/description)
+
+### Classifying the baseline organisational questions
+
+All 5 baseline organisational context questions are **information** questions. They gather context about the reviewer's organisation — the answer is always descriptive, not a status.
+
+1. "Does this output reflect how your organisation actually operates, or how organisations operate generically?" → **Information**
+2. "Are there internal policies, standards, or precedents this output should align with?" → **Information**
+3. "Who in your organisation would normally be responsible for this type of work, and have they been consulted?" → **Information**
+4. "If this output were wrong, what would the consequences be and who would be affected?" → **Information**
+5. "Is this output going to be used as-is, or as input to further work?" → **Information**
+
+### Classifying category-specific questions
+
+Most category-specific questions are **verification** questions (confirm, verify, check). However, questions using patterns like "What is your assessment of...", "What are the potential consequences...", or "What is the actual position in your context?" are **information** questions.
+
+When generating questions, tag each one with its response type so that Step 9 of the review workflow can present the correct response mechanism.
+
 ## Question Quality Rules
 
 Every question must:
@@ -162,5 +208,6 @@ Every question must:
 - Be answerable by the reviewer (not require external research during the review)
 - Use permitted language only (see review-methodology skill)
 - Be framed as a consideration, not a conclusion
+- Be classified as either **verification** or **information** (see Question Response Types above)
 
 Never generate a question that implies the AI output is wrong. Frame questions as verification prompts, not error detection.
